@@ -1,4 +1,4 @@
-var recipes = {}
+var recipes = {steak: "butter"}
 
 function updateObjectWithKeyAndValue(object, key, value) {
   return Object.assign({}, object, {[key]: value})
@@ -14,3 +14,5 @@ function deleteFromObjectByKey(object, key) {
   delete newObj.key
   return newObj
 }
+
+console.log(deleteFromObjectByKey(recipes, steak)
